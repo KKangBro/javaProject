@@ -1,0 +1,19 @@
+package exam;
+
+import java.util.Arrays;
+
+public class Prob5 {
+	public static void main(String[] args) {
+		int[] answer = { 1, 4, 4, 3, 1, 4, 4, 2, 1, 3, 2 };
+		int[] counter = new int[4];
+
+		Arrays.stream(answer).forEach(value -> counter[value - 1] += 1);
+		for (int i : answer) {
+			counter[i - 1] += 1;
+		}
+
+		for (int i = 0; i < counter.length; i++) {
+			System.out.println((i + 1) + "의 갯수는 " + counter[i] + "개 입니다.");
+		}
+	}
+}
