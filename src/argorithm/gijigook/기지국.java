@@ -24,7 +24,7 @@ public class 기지국 {
 				System.out.println();
 			}
 
-			// 구현
+			// 구현 ㅎㅎ
 			System.out.println();
 			int range = 0;
 			for (int i = 0; i < N; i++) {
